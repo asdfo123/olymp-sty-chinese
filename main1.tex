@@ -1,0 +1,155 @@
+\documentclass[12pt,a4paper,oneside]{article}
+\usepackage{olymp}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color} % for colored text
+\usepackage{import} % for changing current dir
+\usepackage{epigraph}
+\usepackage{wrapfig} % for having text alongside pictures
+\usepackage{verbatim}
+\usepackage{ctex}
+\usepackage{indentfirst}
+\usepackage[table,xcdraw]{xcolor}
+\setlength{\parindent}{2em}
+% 子题目不再维护.
+
+\begin{document}
+\contest
+{2023 Harbin Institute of Technology (Weihai) Newbie Programming Contest - Practice Session}%
+{China, Shandong, Weihai}%
+{December, 22, 2023}%
+
+% ---------------------------------------------------------------------------------------------------------	
+
+    \begin{problem}{A+B Problem}{standard input}{standard output}{1 second}{256 megabytes}
+	
+        本题用于测试基本输入输出和熟悉比赛界面，请各位选手测试是否可以登入比赛网址，是否可以正常提交题目，是否可以正常获取
+反馈结果。
+
+题目会输入两个整数 $a$ 和 $b$，你需要输出 $a + b$ 的值。
+        
+        
+	\InputFile
+
+        一行两个整数$a$和$b$（$-10^9 \le a,b \le 10^9$）。
+        
+        \OutputFile
+	输出一行一个整数，表示 $a+b$ ，即$a$与$b$的和。
+	\Example
+	
+	\begin{example}
+	\exmpfile{B1/1.in}{B1/1.ans}%
+        \exmpfile{B1/2.in}{B1/2.ans}%
+	\end{example}
+
+        \Note
+        样例 1 中，众所周知 $1 + 1 = 2$。
+        
+        样例 2 中，通过并不难找到的计算器计算可知答案是正确的。
+	
+\end{problem}
+% ---------------------------------------------------------------------------------------------------------
+
+    \begin{problem}{Question}{standard input}{standard output}{1 second}{256 megabytes}
+	
+      \textbf{芝士}关于哈尔滨工业大学(威海)的十问十答。
+      
+      你需要按照顺序给出一下所有题目的答案，只需要判断即可，正确用 T 表示，错误用 F 表示。
+      
+      1、哈尔滨工业大学(威海)这个名字中的括号为半角括号。
+      
+      2、哈尔滨工业大学（威海）建于1983年，是哈工大“一校三区”（哈尔滨、威海、深圳）的重要组成部分。
+      
+      3、哈尔滨工业大学(威海)的第一任校长为徐晓飞。
+      
+      4、钱学森是我们的知名校友。
+      
+      5、图书馆往北的小道通向留学生公寓。
+      
+      6、打 ACM 可以找到对象。
+      
+      7、学校限速20km/h。
+      
+      8、像学子路上买饭的小亭子，我校一共有3个。
+      
+      9、下午打ACM正式赛的时候可以趁监考同学不注意的时候偷偷拿出早就准备好的纸质小抄。
+      
+      10、3 公寓和 5 公寓中间是 4 公寓。
+
+
+
+	\InputFile
+	无
+        \OutputFile
+	输出一行字符串，其中字符只有T或F，依次表示每个题的答案。
+	\Example
+	\begin{example}
+	\exmpfile{A1/1.in}{A1/1.ans}%
+	\end{example}
+        
+        \Note
+        样例仅作输出形式的参考，并不代表正确答案。
+	
+\end{problem}
+	
+
+
+% ---------------------------------------------------------------------------------------------------------	
+
+    \begin{problem}{A+B Pro Max}{standard input}{standard output}{1 second}{256 megabytes}
+	
+    	
+        输入两个整数 $a$ 和 $b$，你需要输出 $a + b$ 的值。
+        \InputFile
+
+        一行两个整数$a$和$b$（$1 \le a,b \le 2^{63} - 1$）。
+        
+        \OutputFile
+	输出一行一个整数，表示 $a+b$ ，即$a$与$b$的和。
+	\Example
+	
+	\begin{example}
+	\exmpfile{B1/1.in}{B1/1.ans}%
+	\end{example}
+
+        \Note
+        注意数据范围。
+	\end{problem}
+% ---------------------------------------------------------------------------------------------------------	
+
+    \begin{problem}{Leap Year}{standard input}{standard output}{1 second}{256 megabytes}
+	
+    	
+        众所周知，闰年是因为地球围着太阳转才产生的，并由此产生了令众多入门程序猿非常恶心
+        的题目——输入一个年份，判断它是不是闰年。但是本题并不是这样，本题不仅会让你判断一个
+        年份是不是闰年而且还要问你它是不是一个质数。而且本题不止要问你一次，还要问你很多次。
+        \InputFile
+
+        第一行一个正整数 $T$ 表示数据组数。
+        
+        接下来 $T$ 行，每行一个正整数 $y$ ，表示一个年份。
+        
+        其中数据保证：$1 \le T \le 10^6, 1 \le y \le 10^9$。
+        
+        \OutputFile
+	对于每一组数据如果输入的年份既是闰年又是质数，输出 Yes；否则输出 No。
+ 
+        每个输出占一行，小学英语老师告诉你首字母应该大写。
+	\Example
+	
+	\begin{example}
+	\exmpfile{D1/1.in}{D1/1.ans}%
+	\end{example}
+
+        \Note
+        另外如果你不知道闰年是什么，请努力回忆你的小学语文老师，她肯定教过你什么是闰年。
+        
+        如果你不知道质数是什么，请再努力回忆你的小学数学老师，这是真 · 小学二年级知识。
+        
+\textit{来自小 H 的便签：都 2023 年了，不会还有人手打 Ye5和 N0 吧，他们都不知道 Ctrl+c 和 Ctrl+v
+吗?}
+	\end{problem}
+
+
+\end{document}
